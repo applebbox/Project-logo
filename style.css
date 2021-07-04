@@ -1,0 +1,182 @@
+
+  *
+  {margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+body
+  {display: flex;
+  font-family: 'Encode Sans SC';
+  background: black;}
+
+.text-focus-in {
+-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+0% {
+-webkit-filter: blur(12px);
+        filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+        filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes text-focus-in {
+0% {
+-webkit-filter: blur(12px);
+        filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+        filter: blur(0px);
+opacity: 1;
+}
+}
+
+.text-focus-in2 {
+-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in2 {
+0% {
+-webkit-filter: blur(12px);
+        filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+        filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes text-focus-in2 {
+0% {
+-webkit-filter: blur(12px);
+        filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+        filter: blur(0px);
+opacity: 1;
+}
+}
+
+.head_title
+{width: 1600px;
+height: 850px;
+border: 1px solid black;
+overflow: hidden;
+color: white;
+background-image: url(images/planet-581239.jpg);
+background-size: 100%;
+background-repeat: no-repeat;}
+
+.head_title h1
+  {font-size: 80px;
+  position: relative;
+  text-align: center;
+  top: 25%;
+  text-shadow: 2px 2px 5px black;}
+
+hr 
+{width: 600px;
+position: relative;
+top: 32%;
+left: 30%;
+background: white;
+border: 2px solid white;
+}
+
+.write
+{background: rgba(185, 185, 185, 0.445);
+border-radius: 20px;
+width: 230px;
+height: 35px;
+font-size: 1.3em;
+padding: 3px;
+color: white;
+position: relative;
+top: 42px;
+left: 81%;
+background-image: url(images/search_white_24dp.svg);
+background-repeat: no-repeat;
+background-position-x: 7px;
+background-position-y: 5px;}
+
+.head_title > p
+{text-align: center;
+position: relative;
+top: 28%;
+font-size: 30px;
+}
+
+.logo
+{position: absolute;
+width: 70px;
+left: 50px;
+top: 30px;}
+
+.slide_box
+{width: 800px;
+height: 300px;
+background: white;
+position: relative;
+top: 35%;
+margin: 0 auto;
+overflow: hidden;
+outline: 1px dashed white;}
+
+.animated
+  {width: calc(800px*3);
+  animation-name: animated;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;}
+
+    @keyframes animated{ 
+   0%{transform: translateX(0);}
+    20%{transform: translateX(0);}
+    40%{transform: translateX(-33.33%);}
+    60%{transform: translateX(-33.33%);}
+    80%{transform: translateX(-66.66%);}
+    100%{transform: translateX(-66.66%);}
+    }
+  
+  .animated > img
+        {float: left;}
+
+  .inside
+    {color: white;
+    position: absolute;
+    left: 30%;
+    bottom: 10%;
+    text-shadow: 1px 1px 1px yellowgreen;
+    font-size: 25px;}
+
+  .rocket
+      {position: absolute;
+      width: 200px;
+      top: 40%;
+      transform: rotate(-35deg);
+      
+      animation-name: rocket;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;}
+
+  @keyframes rocket{
+       0% {left: 0px;}
+       50% {left : 650px; top: 80px; transform: rotate(35deg);}
+       100% {left: 1300px; transform: rotate(35deg); opacity: 0;}
+
+
+      }
+
